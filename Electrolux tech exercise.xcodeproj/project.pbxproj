@@ -3,14 +3,34 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A435FFE665AD60A8785A0BF /* Pods_Electrolux_tech_exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52D1996992A7A4A9AE23FFEE /* Pods_Electrolux_tech_exercise.framework */; };
+		5448F96C72A7BB7CD42857FE /* Pods_Electrolux_tech_exerciseTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B448D212284B1ADE5F8834C /* Pods_Electrolux_tech_exerciseTests.framework */; };
 		D51D8D3B2693182F006DF432 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D3A2693182F006DF432 /* AppDelegate.swift */; };
 		D51D8D3D2693182F006DF432 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D3C2693182F006DF432 /* SceneDelegate.swift */; };
 		D51D8D4726931832006DF432 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51D8D4526931832006DF432 /* LaunchScreen.storyboard */; };
 		D51D8D5226931833006DF432 /* Electrolux_tech_exerciseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D5126931833006DF432 /* Electrolux_tech_exerciseTests.swift */; };
+		D51D8D7626933A90006DF432 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D7526933A90006DF432 /* NetworkService.swift */; };
+		D51D8D7926933AC9006DF432 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D51D8D7B26933AC9006DF432 /* Localizable.strings */; };
+		D51D8D7E26933B0B006DF432 /* Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D7D26933B0B006DF432 /* Localized.swift */; };
+		D51D8D8126933F66006DF432 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D8026933F66006DF432 /* FlickrAPI.swift */; };
+		D51D8D8326933F91006DF432 /* NetworkRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D8226933F91006DF432 /* NetworkRequests.swift */; };
+		D51D8D8526933FEA006DF432 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D8426933FE9006DF432 /* Const.swift */; };
+		D51D8D8726934A68006DF432 /* PhotoSearchInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D8626934A68006DF432 /* PhotoSearchInteractor.swift */; };
+		D51D8D892693523D006DF432 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D882693523C006DF432 /* JsonParser.swift */; };
+		D51D8D8C26945937006DF432 /* NetworkModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D8B26945937006DF432 /* NetworkModels.swift */; };
+		D51D8D8E2694596B006DF432 /* PhotoSearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D8D2694596B006DF432 /* PhotoSearchPresenter.swift */; };
+		D51D8D90269459F1006DF432 /* PhotoSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D8F269459F1006DF432 /* PhotoSearchViewController.swift */; };
+		D51D8D9226945AB9006DF432 /* PhotoSearchRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D9126945AB9006DF432 /* PhotoSearchRouter.swift */; };
+		D51D8D9426945C3B006DF432 /* UIViewController+Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D9326945C3B006DF432 /* UIViewController+Alert.swift */; };
+		D51D8D9626945C7F006DF432 /* PhotoSearchConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D9526945C7F006DF432 /* PhotoSearchConfigurator.swift */; };
+		D51D8D992694612E006DF432 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D982694612E006DF432 /* PhotoCollectionViewCell.swift */; };
+		D51D8D9B2694A600006DF432 /* PhotoSearchBarReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D9A2694A5FF006DF432 /* PhotoSearchBarReusableView.swift */; };
+		D51D8D9E2694A6FA006DF432 /* UIView+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D9D2694A6FA006DF432 /* UIView+Identifier.swift */; };
+		D51D8DA02694ADBE006DF432 /* String+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8D9F2694ADBE006DF432 /* String+Empty.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +44,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16A54FBE3F5F0CE7DF7C817B /* Pods-Electrolux tech exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux tech exercise.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux tech exercise/Pods-Electrolux tech exercise.debug.xcconfig"; sourceTree = "<group>"; };
+		1B448D212284B1ADE5F8834C /* Pods_Electrolux_tech_exerciseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux_tech_exerciseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		52D1996992A7A4A9AE23FFEE /* Pods_Electrolux_tech_exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Electrolux_tech_exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBDD6E739D94D932D81041E /* Pods-Electrolux tech exerciseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux tech exerciseTests.debug.xcconfig"; path = "Target Support Files/Pods-Electrolux tech exerciseTests/Pods-Electrolux tech exerciseTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AEF10A2C012AD792F36FA678 /* Pods-Electrolux tech exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux tech exercise.release.xcconfig"; path = "Target Support Files/Pods-Electrolux tech exercise/Pods-Electrolux tech exercise.release.xcconfig"; sourceTree = "<group>"; };
 		D51D8D372693182F006DF432 /* Electrolux tech exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Electrolux tech exercise.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51D8D3A2693182F006DF432 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D51D8D3C2693182F006DF432 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +57,26 @@
 		D51D8D4D26931833006DF432 /* Electrolux tech exerciseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Electrolux tech exerciseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D51D8D5126931833006DF432 /* Electrolux_tech_exerciseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Electrolux_tech_exerciseTests.swift; sourceTree = "<group>"; };
 		D51D8D5326931833006DF432 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D51D8D7526933A90006DF432 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D51D8D7A26933AC9006DF432 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D51D8D7C26933ADE006DF432 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		D51D8D7D26933B0B006DF432 /* Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localized.swift; sourceTree = "<group>"; };
+		D51D8D8026933F66006DF432 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		D51D8D8226933F91006DF432 /* NetworkRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequests.swift; sourceTree = "<group>"; };
+		D51D8D8426933FE9006DF432 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
+		D51D8D8626934A68006DF432 /* PhotoSearchInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchInteractor.swift; sourceTree = "<group>"; };
+		D51D8D882693523C006DF432 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		D51D8D8B26945937006DF432 /* NetworkModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModels.swift; sourceTree = "<group>"; };
+		D51D8D8D2694596B006DF432 /* PhotoSearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchPresenter.swift; sourceTree = "<group>"; };
+		D51D8D8F269459F1006DF432 /* PhotoSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchViewController.swift; sourceTree = "<group>"; };
+		D51D8D9126945AB9006DF432 /* PhotoSearchRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchRouter.swift; sourceTree = "<group>"; };
+		D51D8D9326945C3B006DF432 /* UIViewController+Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alert.swift"; sourceTree = "<group>"; };
+		D51D8D9526945C7F006DF432 /* PhotoSearchConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchConfigurator.swift; sourceTree = "<group>"; };
+		D51D8D982694612E006DF432 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D51D8D9A2694A5FF006DF432 /* PhotoSearchBarReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchBarReusableView.swift; sourceTree = "<group>"; };
+		D51D8D9D2694A6FA006DF432 /* UIView+Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Identifier.swift"; sourceTree = "<group>"; };
+		D51D8D9F2694ADBE006DF432 /* String+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Empty.swift"; sourceTree = "<group>"; };
+		F2DCDDB91BA8D7602AC02300 /* Pods-Electrolux tech exerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux tech exerciseTests.release.xcconfig"; path = "Target Support Files/Pods-Electrolux tech exerciseTests/Pods-Electrolux tech exerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A435FFE665AD60A8785A0BF /* Pods_Electrolux_tech_exercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,18 +92,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5448F96C72A7BB7CD42857FE /* Pods_Electrolux_tech_exerciseTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1E08B4F5F508F04CF704D34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				52D1996992A7A4A9AE23FFEE /* Pods_Electrolux_tech_exercise.framework */,
+				1B448D212284B1ADE5F8834C /* Pods_Electrolux_tech_exerciseTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D51D8D2E2693182F006DF432 = {
 			isa = PBXGroup;
 			children = (
 				D51D8D392693182F006DF432 /* Electrolux tech exercise */,
 				D51D8D5026931833006DF432 /* Electrolux tech exerciseTests */,
 				D51D8D382693182F006DF432 /* Products */,
+				EF52D30802820AAC9907AE7D /* Pods */,
+				A1E08B4F5F508F04CF704D34 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +161,10 @@
 		D51D8D6B26931893006DF432 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				D51D8D8426933FE9006DF432 /* Const.swift */,
 				D51D8D4526931832006DF432 /* LaunchScreen.storyboard */,
 				D51D8D4826931832006DF432 /* Info.plist */,
+				D51D8D7B26933AC9006DF432 /* Localizable.strings */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -112,29 +172,37 @@
 		D51D8D6C269318B3006DF432 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D51D8D6D269318B8006DF432 /* List */,
-				D51D8D6E269318C1006DF432 /* Detail */,
+				D51D8D6D269318B8006DF432 /* PhotoSearch */,
+				D51D8D6E269318C1006DF432 /* PhotoDetail */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		D51D8D6D269318B8006DF432 /* List */ = {
+		D51D8D6D269318B8006DF432 /* PhotoSearch */ = {
 			isa = PBXGroup;
 			children = (
+				D51D8D9726946119006DF432 /* Cells */,
+				D51D8D9526945C7F006DF432 /* PhotoSearchConfigurator.swift */,
+				D51D8D8626934A68006DF432 /* PhotoSearchInteractor.swift */,
+				D51D8D8D2694596B006DF432 /* PhotoSearchPresenter.swift */,
+				D51D8D8F269459F1006DF432 /* PhotoSearchViewController.swift */,
+				D51D8D9126945AB9006DF432 /* PhotoSearchRouter.swift */,
 			);
-			path = List;
+			path = PhotoSearch;
 			sourceTree = "<group>";
 		};
-		D51D8D6E269318C1006DF432 /* Detail */ = {
+		D51D8D6E269318C1006DF432 /* PhotoDetail */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Detail;
+			path = PhotoDetail;
 			sourceTree = "<group>";
 		};
 		D51D8D6F269318CA006DF432 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				D51D8D7426933A73006DF432 /* Network */,
+				D51D8D8A26935247006DF432 /* JsonParser */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -142,8 +210,59 @@
 		D51D8D70269318D8006DF432 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				D51D8D7D26933B0B006DF432 /* Localized.swift */,
+				D51D8D9326945C3B006DF432 /* UIViewController+Alert.swift */,
+				D51D8D9D2694A6FA006DF432 /* UIView+Identifier.swift */,
+				D51D8D9F2694ADBE006DF432 /* String+Empty.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D51D8D7426933A73006DF432 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				D51D8D7F26933F56006DF432 /* API */,
+				D51D8D7526933A90006DF432 /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		D51D8D7F26933F56006DF432 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D51D8D8026933F66006DF432 /* FlickrAPI.swift */,
+				D51D8D8226933F91006DF432 /* NetworkRequests.swift */,
+				D51D8D8B26945937006DF432 /* NetworkModels.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D51D8D8A26935247006DF432 /* JsonParser */ = {
+			isa = PBXGroup;
+			children = (
+				D51D8D882693523C006DF432 /* JsonParser.swift */,
+			);
+			path = JsonParser;
+			sourceTree = "<group>";
+		};
+		D51D8D9726946119006DF432 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D51D8D982694612E006DF432 /* PhotoCollectionViewCell.swift */,
+				D51D8D9A2694A5FF006DF432 /* PhotoSearchBarReusableView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		EF52D30802820AAC9907AE7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				16A54FBE3F5F0CE7DF7C817B /* Pods-Electrolux tech exercise.debug.xcconfig */,
+				AEF10A2C012AD792F36FA678 /* Pods-Electrolux tech exercise.release.xcconfig */,
+				9BBDD6E739D94D932D81041E /* Pods-Electrolux tech exerciseTests.debug.xcconfig */,
+				F2DCDDB91BA8D7602AC02300 /* Pods-Electrolux tech exerciseTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,9 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D51D8D6126931833006DF432 /* Build configuration list for PBXNativeTarget "Electrolux tech exercise" */;
 			buildPhases = (
+				42692A595BEF9AA5EB594602 /* [CP] Check Pods Manifest.lock */,
 				D51D8D332693182F006DF432 /* Sources */,
 				D51D8D342693182F006DF432 /* Frameworks */,
 				D51D8D352693182F006DF432 /* Resources */,
+				AD4A5A211178533F0467ED9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +291,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D51D8D6426931833006DF432 /* Build configuration list for PBXNativeTarget "Electrolux tech exerciseTests" */;
 			buildPhases = (
+				258BF73AD6A3AA9A2F729F1B /* [CP] Check Pods Manifest.lock */,
 				D51D8D4926931833006DF432 /* Sources */,
 				D51D8D4A26931833006DF432 /* Frameworks */,
 				D51D8D4B26931833006DF432 /* Resources */,
@@ -209,6 +331,7 @@
 			knownRegions = (
 				en,
 				Base,
+				sv,
 			);
 			mainGroup = D51D8D2E2693182F006DF432;
 			productRefGroup = D51D8D382693182F006DF432 /* Products */;
@@ -227,6 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D51D8D4726931832006DF432 /* LaunchScreen.storyboard in Resources */,
+				D51D8D7926933AC9006DF432 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,13 +363,94 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		258BF73AD6A3AA9A2F729F1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Electrolux tech exerciseTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42692A595BEF9AA5EB594602 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Electrolux tech exercise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4A5A211178533F0467ED9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electrolux tech exercise/Pods-Electrolux tech exercise-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Electrolux tech exercise/Pods-Electrolux tech exercise-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Electrolux tech exercise/Pods-Electrolux tech exercise-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D51D8D332693182F006DF432 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D51D8D3B2693182F006DF432 /* AppDelegate.swift in Sources */,
+				D51D8D90269459F1006DF432 /* PhotoSearchViewController.swift in Sources */,
+				D51D8D7E26933B0B006DF432 /* Localized.swift in Sources */,
+				D51D8D8326933F91006DF432 /* NetworkRequests.swift in Sources */,
+				D51D8D8E2694596B006DF432 /* PhotoSearchPresenter.swift in Sources */,
+				D51D8D8C26945937006DF432 /* NetworkModels.swift in Sources */,
+				D51D8D9626945C7F006DF432 /* PhotoSearchConfigurator.swift in Sources */,
+				D51D8D7626933A90006DF432 /* NetworkService.swift in Sources */,
 				D51D8D3D2693182F006DF432 /* SceneDelegate.swift in Sources */,
+				D51D8D9B2694A600006DF432 /* PhotoSearchBarReusableView.swift in Sources */,
+				D51D8D992694612E006DF432 /* PhotoCollectionViewCell.swift in Sources */,
+				D51D8D8126933F66006DF432 /* FlickrAPI.swift in Sources */,
+				D51D8D8726934A68006DF432 /* PhotoSearchInteractor.swift in Sources */,
+				D51D8D9E2694A6FA006DF432 /* UIView+Identifier.swift in Sources */,
+				D51D8D892693523D006DF432 /* JsonParser.swift in Sources */,
+				D51D8D9226945AB9006DF432 /* PhotoSearchRouter.swift in Sources */,
+				D51D8DA02694ADBE006DF432 /* String+Empty.swift in Sources */,
+				D51D8D8526933FEA006DF432 /* Const.swift in Sources */,
+				D51D8D9426945C3B006DF432 /* UIViewController+Alert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +481,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		D51D8D7B26933AC9006DF432 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D51D8D7A26933AC9006DF432 /* en */,
+				D51D8D7C26933ADE006DF432 /* sv */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -283,6 +497,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -344,6 +559,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -397,6 +613,7 @@
 		};
 		D51D8D6226931833006DF432 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16A54FBE3F5F0CE7DF7C817B /* Pods-Electrolux tech exercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -416,6 +633,7 @@
 		};
 		D51D8D6326931833006DF432 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF10A2C012AD792F36FA678 /* Pods-Electrolux tech exercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -435,6 +653,7 @@
 		};
 		D51D8D6526931833006DF432 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BBDD6E739D94D932D81041E /* Pods-Electrolux tech exerciseTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -456,6 +675,7 @@
 		};
 		D51D8D6626931833006DF432 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2DCDDB91BA8D7602AC02300 /* Pods-Electrolux tech exerciseTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

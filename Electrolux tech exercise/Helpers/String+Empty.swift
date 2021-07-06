@@ -6,3 +6,9 @@
 //
 
 import Foundation
+
+extension String {
+  var nilIfEmpfy: String? {
+    isEmpty ? nil : self
+  }
+}

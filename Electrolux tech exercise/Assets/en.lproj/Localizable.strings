@@ -5,3 +5,13 @@
   Created by Igor Rudenko on 05.07.2021.
   
 */
+//Global
+"global.ok" = "OK";
+
+//Errors
+"error" = "Error";
+"error.invalid_url" = "Invalid URL";
+"error.empty_content" = "Empty content. Please try to run the requests again.";
+
+//Search
+"search.placeholder" = "Search";

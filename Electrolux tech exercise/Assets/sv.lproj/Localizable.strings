@@ -5,3 +5,13 @@
   Created by Igor Rudenko on 05.07.2021.
   
 */
+//Global
+"global.ok" = "OK";
+
+//Errors
+"error" = "Fel";
+"error.invalid_url" = "Ogiltig URL";
+"error.empty_content" = "Tomt innehåll. Försök att köra förfrågningarna igen.";
+
+//Search
+"search.placeholder" = "Sök";

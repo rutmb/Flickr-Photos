@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Config {
+  static let flickrAPIUrl = "https://api.flickr.com"
+  static let flickrImageUrl = "https://live.staticflickr.com"
+  static let apiKey = "3b26c0baa4eac554cf2d943ce4d91f35"
+  static let perPage = 20
+}

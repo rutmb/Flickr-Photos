@@ -5,4 +5,25 @@
 //  Created by Igor Rudenko on 06.07.2021.
 //
 
-import Foundation
+import UIKit
+
+protocol PhotoSearchRouting: AnyObject {
+  func routeToDetail(_ viewModel: PhotoViewModel)
+  func routeToError(_ message: String)
+}
+
+final class PhotoSearchRouter: PhotoSearchRouting {
+  weak var view: UIViewController?
+  
+  init(view: UIViewController) {
+    self.view = view
+  }
+  
+  func routeToDetail(_ viewModel: PhotoViewModel) {
+    //
+  }
+  
+  func routeToError(_ message: String) {
+    view?.presentErrorAlert(message)
+  }
+}
