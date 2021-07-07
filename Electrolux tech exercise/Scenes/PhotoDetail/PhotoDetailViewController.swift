@@ -14,14 +14,6 @@ protocol PhotoDetailDisplayable: AnyObject {
 
 final class PhotoDetailViewController: UIViewController {
   //Properties
-  private lazy var label: UILabel = {
-    let label = UILabel()
-    label.translatesAutoresizingMaskIntoConstraints = false
-    label.font = UIFont.systemFont(ofSize: 16)
-    label.numberOfLines = 1
-    return label
-  }()
-  
   private lazy var imageView: UIImageView = {
     let imageView = UIImageView()
     imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -40,21 +32,13 @@ final class PhotoDetailViewController: UIViewController {
   }
   
   private func configureUI() {
+    view.backgroundColor = .systemBackground
     let saveButton = UIBarButtonItem(
       barButtonSystemItem: .save,
       target: self,
       action: #selector(didTapSaveButton)
     )
     navigationItem.rightBarButtonItem = saveButton
-    
-    view.backgroundColor = .systemBackground
-    view.addSubview(label)
-    label.snp.makeConstraints { make in
-      make.bottom.equalToSuperview()
-      make.left.equalToSuperview()
-      make.right.equalToSuperview()
-//      make.height.equalTo(16)
-    }
     view.addSubview(imageView)
     imageView.snp.makeConstraints { make in
       make.top.equalToSuperview()
@@ -69,6 +53,7 @@ final class PhotoDetailViewController: UIViewController {
   }
 }
 
+//MARK: - PhotoDetailDisplayable
 extension PhotoDetailViewController: PhotoDetailDisplayable {
   func displayPhoto(_ photo: PhotoDetail.Fetch.ViewModel) {
     navigationItem.title = photo.title
@@ -81,5 +66,4 @@ extension PhotoDetailViewController: PhotoDetailDisplayable {
   func displaySave(_ viewModel: PhotoDetail.Save.ViewModel) {
     router.routeToAlert(viewModel.message)
   }
-
 }

@@ -47,7 +47,6 @@ final class PhotoCollectionViewCell: UICollectionViewCell {
   }
   
   private func configureUI() {
-    backgroundColor = .systemBackground
     contentView.addSubview(activityIndicator)
     activityIndicator.snp.makeConstraints { make in
       make.centerX.equalToSuperview()
