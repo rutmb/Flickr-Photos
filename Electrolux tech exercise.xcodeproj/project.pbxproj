@@ -38,6 +38,8 @@
 		D51D8DAA26959D7A006DF432 /* ImageSaveService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DA926959D7A006DF432 /* ImageSaveService.swift */; };
 		D51D8DAD26959EE2006DF432 /* PhotoDetailModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DAC26959EE2006DF432 /* PhotoDetailModels.swift */; };
 		D51D8DAF2695A170006DF432 /* PhotoDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DAE2695A170006DF432 /* PhotoDetailRouter.swift */; };
+		D51D8DB32695B48D006DF432 /* UIViewController+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DB22695B48D006DF432 /* UIViewController+Search.swift */; };
+		D51D8DB72695BD7E006DF432 /* GCD+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DB62695BD7E006DF432 /* GCD+Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,8 @@
 		D51D8DA926959D7A006DF432 /* ImageSaveService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaveService.swift; sourceTree = "<group>"; };
 		D51D8DAC26959EE2006DF432 /* PhotoDetailModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailModels.swift; sourceTree = "<group>"; };
 		D51D8DAE2695A170006DF432 /* PhotoDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailRouter.swift; sourceTree = "<group>"; };
+		D51D8DB22695B48D006DF432 /* UIViewController+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Search.swift"; sourceTree = "<group>"; };
+		D51D8DB62695BD7E006DF432 /* GCD+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GCD+Helpers.swift"; sourceTree = "<group>"; };
 		F2DCDDB91BA8D7602AC02300 /* Pods-Electrolux tech exerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux tech exerciseTests.release.xcconfig"; path = "Target Support Files/Pods-Electrolux tech exerciseTests/Pods-Electrolux tech exerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -235,6 +239,8 @@
 				D51D8D9326945C3B006DF432 /* UIViewController+Alert.swift */,
 				D51D8D9D2694A6FA006DF432 /* UIView+Identifier.swift */,
 				D51D8D9F2694ADBE006DF432 /* String+Empty.swift */,
+				D51D8DB22695B48D006DF432 /* UIViewController+Search.swift */,
+				D51D8DB62695BD7E006DF432 /* GCD+Helpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -461,8 +467,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D51D8DB72695BD7E006DF432 /* GCD+Helpers.swift in Sources */,
 				D51D8DA82694B01B006DF432 /* PhotoDetailConfigurator.swift in Sources */,
 				D51D8D3B2693182F006DF432 /* AppDelegate.swift in Sources */,
+				D51D8DB32695B48D006DF432 /* UIViewController+Search.swift in Sources */,
 				D51D8D90269459F1006DF432 /* PhotoSearchViewController.swift in Sources */,
 				D51D8D7E26933B0B006DF432 /* Localized.swift in Sources */,
 				D51D8D8326933F91006DF432 /* NetworkRequests.swift in Sources */,

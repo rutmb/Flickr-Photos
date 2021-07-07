@@ -27,20 +27,25 @@ final class PhotoSearchViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     configureUI()
-    interactor.searchElectrolux()
+    interactor.searchPhotos()
   }
   
   private func configureUI() {
     view.backgroundColor = .systemBackground
     navigationItem.title = "Electrolux tech assignment"
     configureCollectionView()
+    configureSearch()
+  }
+  
+  //MARK: UISearchResultsUpdating
+  override func updateSearchResults(for searchController: UISearchController) {
+    interactor.searchPhotos(query: searchController.searchBar.text)
   }
 }
 
 private extension PhotoSearchViewController {
   func configureCollectionView() {
     let layout = UICollectionViewFlowLayout()
-    layout.headerReferenceSize = CGSize(width: 0, height: 40)
     
     collectionView = UICollectionView(
       frame: view.bounds,
@@ -54,11 +59,6 @@ private extension PhotoSearchViewController {
     collectionView.register(
       PhotoCollectionViewCell.self,
       forCellWithReuseIdentifier: PhotoCollectionViewCell.identifier
-    )
-    collectionView.register(
-      PhotoSearchBarReusableView.self,
-      forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-      withReuseIdentifier: PhotoSearchBarReusableView.identifier
     )
     view.addSubview(collectionView)
     collectionView.snp.makeConstraints { maker in
@@ -92,16 +92,6 @@ extension PhotoSearchViewController: UICollectionViewDataSource {
     ) as! PhotoCollectionViewCell
     cell.configure(with: photos[indexPath.row])
     return cell
-  }
-  
-  func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
-    let searchBarView = collectionView.dequeueReusableSupplementaryView(
-      ofKind: kind,
-      withReuseIdentifier: PhotoSearchBarReusableView.identifier,
-      for: indexPath
-    ) as! PhotoSearchBarReusableView
-    searchBarView.delegate = self
-    return searchBarView
   }
 }
 

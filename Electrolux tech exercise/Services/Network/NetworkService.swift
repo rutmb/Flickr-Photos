@@ -42,7 +42,11 @@ final class NetworkService: NetworkFetchable {
     request: NetworkRequests.Search,
     completion: @escaping NetworkResultBlock
   )  {
-    provider.request(.search(request)) { result in
+    provider.request(
+      .search(request),
+      callbackQueue: DispatchQueue.global(),
+      progress: nil
+    ) { result in
       switch result {
       case .success(let response):
         completion(.success(response.data))

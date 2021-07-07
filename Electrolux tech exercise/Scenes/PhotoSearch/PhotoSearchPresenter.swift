@@ -26,10 +26,14 @@ final class PhotoSearchPresenter: PhotoSearchPresentable {
           imageURL: URL(string: $0.largeURL)
         )
       }
-      view?.displayPhotos(viewModels)
+      onMainThread {
+        self.view?.displayPhotos(viewModels)
+      }
       
     case .failure(let error):
-      view?.displayError(error.localizedDescription)
+      onMainThread {
+        self.view?.displayError(error.localizedDescription)
+      }
     }
   }
 }
