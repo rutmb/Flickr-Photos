@@ -8,12 +8,9 @@
 import UIKit
 
 extension UIViewController {
-  func configureSearch(
-    placeholder: String? = localized("search.placeholder")
-  ) {
+  func configureSearch() {
     let searchController = UISearchController(searchResultsController: nil)
     searchController.obscuresBackgroundDuringPresentation = false
-    searchController.searchBar.placeholder = placeholder
     definesPresentationContext = true
     searchController.searchResultsUpdater = self
     navigationItem.searchController = searchController

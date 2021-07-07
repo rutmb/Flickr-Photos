@@ -16,6 +16,7 @@ final class PhotoSearchViewController: UIViewController {
   //Const
   private let padding: CGFloat = 16
   private let columns = 3
+  private let navTitle = "Flickr Photos"
   
   //Properties
   var interactor: PhotoSearchBusinessLogic!
@@ -32,7 +33,7 @@ final class PhotoSearchViewController: UIViewController {
   
   private func configureUI() {
     view.backgroundColor = .systemBackground
-    navigationItem.title = "Electrolux tech assignment"
+    navigationItem.title = navTitle
     configureCollectionView()
     configureSearch()
   }
