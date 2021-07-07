@@ -15,3 +15,6 @@
 
 //Search
 "search.placeholder" = "Sök";
+
+//Detail
+"photo_detail.save.success" = "Foto har sparats";

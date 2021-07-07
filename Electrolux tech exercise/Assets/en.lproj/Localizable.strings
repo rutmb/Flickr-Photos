@@ -15,3 +15,6 @@
 
 //Search
 "search.placeholder" = "Search";
+
+//Detail
+"photo_detail.save.success" = "Photo has been successfully saved";

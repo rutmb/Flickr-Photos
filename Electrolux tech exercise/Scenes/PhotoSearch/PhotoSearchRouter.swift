@@ -20,7 +20,12 @@ final class PhotoSearchRouter: PhotoSearchRouting {
   }
   
   func routeToDetail(_ viewModel: PhotoViewModel) {
-    //
+    let photoDetailVC = PhotoDetailConfigurator.configure()
+    photoDetailVC.interactor.photo = viewModel
+    view?.navigationController?.pushViewController(
+      photoDetailVC,
+      animated: true
+    )
   }
   
   func routeToError(_ message: String) {

@@ -7,7 +7,7 @@
 import SnapKit
 import UIKit
 
-protocol PhotoSearchDisplayable: UIViewController {
+protocol PhotoSearchDisplayable: AnyObject {
   func displayPhotos(_ photos: [PhotoViewModel])
   func displayError(_ message: String)
 }
@@ -28,6 +28,7 @@ final class PhotoSearchViewController: UIViewController {
   }
   
   private func configureUI() {
+    navigationItem.title = "Electrolux tech assignment"
     configureCollectionView()
   }
 }
@@ -110,6 +111,8 @@ extension PhotoSearchViewController: UICollectionViewDataSource {
 
 extension PhotoSearchViewController: UICollectionViewDelegate {
   func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    let photo = photos[indexPath.row]
+    router.routeToDetail(photo)
   }
 }
 

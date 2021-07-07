@@ -8,7 +8,7 @@
 import UIKit
 
 final class PhotoSearchConfigurator {
-  static func configure() -> UIViewController {
+  static func configure() -> PhotoSearchViewController {
     let view = PhotoSearchViewController()
     let router = PhotoSearchRouter(view: view)
     let presenter = PhotoSearchPresenter()
