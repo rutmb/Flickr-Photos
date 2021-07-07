@@ -20,6 +20,7 @@ extension PhotoSearchBusinessLogic {
 final class PhotoSearchInteractor: PhotoSearchBusinessLogic {
   //Const
   private let electroluxSearch = "Electrolux"
+  private let timeout = 0.5
 
   //Properties
   private var networkService: NetworkFetchable
@@ -44,7 +45,7 @@ final class PhotoSearchInteractor: PhotoSearchBusinessLogic {
       self?.internalSearch(query: query)
     }
     searchTask = task
-    onMainThread(after: 0.5, task: task)
+    onMainThread(after: timeout, task: task)
   }
 }
 
