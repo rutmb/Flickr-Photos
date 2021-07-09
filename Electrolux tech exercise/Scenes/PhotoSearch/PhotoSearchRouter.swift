@@ -20,6 +20,7 @@ final class PhotoSearchRouter: PhotoSearchRouting {
   }
   
   func routeToDetail(_ viewModel: PhotoViewModel) {
+    //Create a detail screen and pass the view model
     let photoDetailVC = PhotoDetailConfigurator.configure()
     photoDetailVC.interactor.photo = viewModel
     view?.navigationController?.pushViewController(

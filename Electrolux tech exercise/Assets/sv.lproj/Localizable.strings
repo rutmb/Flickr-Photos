@@ -13,8 +13,5 @@
 "error.invalid_url" = "Ogiltig URL";
 "error.empty_content" = "Tomt innehåll. Försök att köra förfrågningarna igen.";
 
-//Search
-"search.placeholder" = "Sök";
-
 //Detail
 "photo_detail.save.success" = "Foto har sparats";

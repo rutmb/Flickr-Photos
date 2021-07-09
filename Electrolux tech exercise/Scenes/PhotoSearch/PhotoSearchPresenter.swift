@@ -17,6 +17,7 @@ final class PhotoSearchPresenter: PhotoSearchPresentable {
   weak var view: PhotoSearchDisplayable?
   
   func presentPhotos(_ response: PhotoSearchResponse) {
+    //Convert plain objects to view model and pass them to the view on the main thread
     switch response {
     case .success(let photos):
       let viewModels = photos.compactMap {
@@ -26,10 +27,15 @@ final class PhotoSearchPresenter: PhotoSearchPresentable {
           imageURL: URL(string: $0.largeURL)
         )
       }
-      view?.displayPhotos(viewModels)
+      onMainThread {
+        self.view?.displayPhotos(viewModels)
+      }
       
     case .failure(let error):
-      view?.displayError(error.localizedDescription)
+      //Pass the error to the view on the main thread
+      onMainThread {
+        self.view?.displayError(error.localizedDescription)
+      }
     }
   }
 }

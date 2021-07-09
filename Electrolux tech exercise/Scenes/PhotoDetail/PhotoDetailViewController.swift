@@ -56,6 +56,7 @@ final class PhotoDetailViewController: UIViewController {
 //MARK: - PhotoDetailDisplayable
 extension PhotoDetailViewController: PhotoDetailDisplayable {
   func displayPhoto(_ photo: PhotoDetail.Fetch.ViewModel) {
+    //Update the UI according to the view model object
     navigationItem.title = photo.title
     imageView.sd_setImage(
       with: photo.url,

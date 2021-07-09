@@ -9,6 +9,7 @@ import UIKit
 
 final class PhotoDetailConfigurator {
   static func configure() -> PhotoDetailViewController {
+    //Configure the detail screen with all its properties
     let view = PhotoDetailViewController()
     let router = PhotoDetailRouter(view: view)
     let presenter = PhotoDetailPresenter()
