@@ -27,9 +27,3 @@ extension PhotoPlainObject {
     configureImageUrl(size: "b")
   }
 }
-
-struct PhotoViewModel {
-  let title: String
-  let previewURL: URL?
-  let imageURL: URL?
-}

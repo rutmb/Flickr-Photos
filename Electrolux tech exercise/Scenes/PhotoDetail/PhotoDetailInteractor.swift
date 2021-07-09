@@ -32,6 +32,7 @@ final class PhotoDetailInteractor: PhotoDetailBusinessLogic, PhotoDetailDataSour
   }
   
   func fetchPhoto() {
+    //Pass the view model and preview image to the presenter
     let response = PhotoDetail.Fetch.Response(
       photo: photo,
       preview: previewImage()
@@ -40,10 +41,12 @@ final class PhotoDetailInteractor: PhotoDetailBusinessLogic, PhotoDetailDataSour
   }
   
   func savePhoto() {
+    //Get the full size image or the preview image (if failed) and save to the photo album
     guard let image = fullImage() ?? previewImage() else {
       return
     }
     imageSaver.saveImage(image) { [weak self] error in
+      //Pass the optional error to the presetner
       let response = PhotoDetail.Save.Response(error: error)
       self?.presenter.presentSave(response)
     }
@@ -52,12 +55,14 @@ final class PhotoDetailInteractor: PhotoDetailBusinessLogic, PhotoDetailDataSour
 
 private extension PhotoDetailInteractor {
   func previewImage() -> UIImage? {
+    //Fetch a preview image from the memory cache
     return SDImageCache.shared.imageFromMemoryCache(
       forKey: photo.previewURL?.absoluteString
     )
   }
   
   func fullImage() -> UIImage? {
+    //Fetch a full image from the memory cache
     return SDImageCache.shared.imageFromMemoryCache(
       forKey: photo.imageURL?.absoluteString
     )

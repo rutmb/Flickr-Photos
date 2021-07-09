@@ -20,7 +20,7 @@ extension PhotoSearchBusinessLogic {
 final class PhotoSearchInteractor: PhotoSearchBusinessLogic {
   //Const
   private let electroluxSearch = "Electrolux"
-  private let timeout = 0.5
+  private let timeout = 0.2
 
   //Properties
   private var networkService: NetworkFetchable
@@ -40,6 +40,7 @@ final class PhotoSearchInteractor: PhotoSearchBusinessLogic {
   }
   
   func searchPhotos(query: String? = "") {
+    //Debounce. Waiting for 0.2 seconds before the actual search
     searchTask?.cancel()
     let task = DispatchWorkItem { [weak self] in
       self?.internalSearch(query: query)
@@ -51,6 +52,7 @@ final class PhotoSearchInteractor: PhotoSearchBusinessLogic {
 
 private extension PhotoSearchInteractor {
   func internalSearch(query: String?) {
+    //Don't search if the previous and current queries are identical
     guard searchQuery != query else {
       return
     }
@@ -66,6 +68,7 @@ private extension PhotoSearchInteractor {
       guard let self = self else { return }
       switch result {
       case .success(let data):
+        //Take an array of json objects by the "photos.photo" path and create parse them to the plain objects
         let photos: [PhotoPlainObject] = self.parser.parseArray(
           data: data,
           path: "photos.photo"

@@ -14,8 +14,11 @@ protocol PhotoSearchDisplayable: AnyObject {
 
 final class PhotoSearchViewController: UIViewController {
   //Const
+  //Padding for the collection view
   private let padding: CGFloat = 16
+  //Number of the columns for the collection view layout
   private let columns = 3
+  //Title of the screen
   private let navTitle = "Flickr Photos"
   
   //Properties
@@ -32,6 +35,7 @@ final class PhotoSearchViewController: UIViewController {
   }
   
   private func configureUI() {
+    //Configure the UI here
     view.backgroundColor = .systemBackground
     navigationItem.title = navTitle
     configureCollectionView()
@@ -107,11 +111,13 @@ extension PhotoSearchViewController: UICollectionViewDelegate {
 //MARK: - UICollectionViewFlowLayout
 extension PhotoSearchViewController: UICollectionViewDelegateFlowLayout {
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    //Count the size of the cells according to the padding and the number of columns
     let size: CGFloat = (collectionView.bounds.width - padding * CGFloat(columns + 1)) / CGFloat(columns)
     return CGSize(width: size, height: size)
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    //Applying padding for the section here
     UIEdgeInsets(
       top: padding,
       left: padding,
@@ -124,7 +130,6 @@ extension PhotoSearchViewController: UICollectionViewDelegateFlowLayout {
 //MARK: - UISearchBarDelegate
 extension PhotoSearchViewController: UISearchBarDelegate {
   func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    //add throttle here
     interactor.searchPhotos(query: searchText)
   }
 }

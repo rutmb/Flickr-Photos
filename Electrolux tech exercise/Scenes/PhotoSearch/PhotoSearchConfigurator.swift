@@ -9,6 +9,7 @@ import UIKit
 
 final class PhotoSearchConfigurator {
   static func configure() -> PhotoSearchViewController {
+    //Configure the search screen with all its properties
     let view = PhotoSearchViewController()
     let router = PhotoSearchRouter(view: view)
     let presenter = PhotoSearchPresenter()

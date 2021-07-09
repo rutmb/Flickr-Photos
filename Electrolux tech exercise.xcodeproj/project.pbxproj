@@ -39,6 +39,7 @@
 		D51D8DAF2695A170006DF432 /* PhotoDetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DAE2695A170006DF432 /* PhotoDetailRouter.swift */; };
 		D51D8DB32695B48D006DF432 /* UIViewController+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DB22695B48D006DF432 /* UIViewController+Search.swift */; };
 		D51D8DB72695BD7E006DF432 /* GCD+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DB62695BD7E006DF432 /* GCD+Helpers.swift */; };
+		D51D8DB92696F1A9006DF432 /* PhotoSearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51D8DB82696F1A9006DF432 /* PhotoSearchModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		D51D8DAE2695A170006DF432 /* PhotoDetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoDetailRouter.swift; sourceTree = "<group>"; };
 		D51D8DB22695B48D006DF432 /* UIViewController+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Search.swift"; sourceTree = "<group>"; };
 		D51D8DB62695BD7E006DF432 /* GCD+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GCD+Helpers.swift"; sourceTree = "<group>"; };
+		D51D8DB82696F1A9006DF432 /* PhotoSearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSearchModels.swift; sourceTree = "<group>"; };
 		F2DCDDB91BA8D7602AC02300 /* Pods-Electrolux tech exerciseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Electrolux tech exerciseTests.release.xcconfig"; path = "Target Support Files/Pods-Electrolux tech exerciseTests/Pods-Electrolux tech exerciseTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +205,7 @@
 				D51D8D8D2694596B006DF432 /* PhotoSearchPresenter.swift */,
 				D51D8D8F269459F1006DF432 /* PhotoSearchViewController.swift */,
 				D51D8D9126945AB9006DF432 /* PhotoSearchRouter.swift */,
+				D51D8DB82696F1A9006DF432 /* PhotoSearchModels.swift */,
 			);
 			path = PhotoSearch;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				D51D8D8E2694596B006DF432 /* PhotoSearchPresenter.swift in Sources */,
 				D51D8D8C26945937006DF432 /* NetworkModels.swift in Sources */,
 				D51D8DA22694AFF6006DF432 /* PhotoDetailInteractor.swift in Sources */,
+				D51D8DB92696F1A9006DF432 /* PhotoSearchModels.swift in Sources */,
 				D51D8D9626945C7F006DF432 /* PhotoSearchConfigurator.swift in Sources */,
 				D51D8D7626933A90006DF432 /* NetworkService.swift in Sources */,
 				D51D8D3D2693182F006DF432 /* SceneDelegate.swift in Sources */,
@@ -658,14 +662,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 93HEPAR872;
 				INFOPLIST_FILE = "Electrolux tech exercise/Assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.igor.rudenko.Electrolux-tech-exercise";
+				PRODUCT_BUNDLE_IDENTIFIER = io.vitim.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -679,14 +683,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 93HEPAR872;
 				INFOPLIST_FILE = "Electrolux tech exercise/Assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.igor.rudenko.Electrolux-tech-exercise";
+				PRODUCT_BUNDLE_IDENTIFIER = io.vitim.poc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
