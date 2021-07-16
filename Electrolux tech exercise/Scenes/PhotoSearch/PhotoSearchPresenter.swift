@@ -7,9 +7,9 @@
 
 import Foundation
 
-typealias PhotoSearchResponse = Result<[PhotoPlainObject], NetworkError>
-
 protocol PhotoSearchPresentable {
+  typealias PhotoSearchResponse = Result<[PhotoPlainObject], NetworkError>
+
   func presentPhotos(_ response: PhotoSearchResponse)
 }
 

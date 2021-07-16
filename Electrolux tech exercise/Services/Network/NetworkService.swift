@@ -25,10 +25,10 @@ enum NetworkError: LocalizedError {
   }
 }
 
-typealias NetworkResult = Result<Data, NetworkError>
-typealias NetworkResultBlock = (NetworkResult) -> ()
-
 protocol NetworkFetchable {
+  typealias NetworkResult = Result<Data, NetworkError>
+  typealias NetworkResultBlock = (NetworkResult) -> ()
+
   func searchPhotos(
     request: NetworkRequests.Search,
     completion: @escaping NetworkResultBlock

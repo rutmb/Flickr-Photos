@@ -7,9 +7,9 @@
 
 import UIKit
 
-typealias ImageSaveCompletion = (Error?) -> ()
-
 protocol ImageStoreable {
+  typealias ImageSaveCompletion = (Error?) -> ()
+
   func saveImage(_ image: UIImage, completion: @escaping ImageSaveCompletion)
 }
 
