@@ -7,6 +7,6 @@
 
 import UIKit
 
-extension UIView {
-  static let identifier = String(describing: self)
+extension UIView {  
+  static var identifier: String { String(describing: self) }
 }
